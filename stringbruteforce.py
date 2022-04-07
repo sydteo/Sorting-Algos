@@ -1,10 +1,9 @@
-def simplsScan(P, T):
+def simpleScan(P, T):
+    m = len(P)
+    n = len(T)
     i = 0
     j = 0
     k = 0
-    m = len(P)
-    n = len(T)
-
     while j < n:
         if T[j] != P[k]:
             i += 1
@@ -13,10 +12,11 @@ def simplsScan(P, T):
                 break
             k = 0
         else:
-            j += 1
-            k += 1
+            j+=1
+            k+=1
             if (k == m):
                 return i
     return -1
 
-print("index is found at: ", simplsScan("syd","teosdysyd"))
+print("index can be found at: ", simpleScan("lo","kjahilo"))
+    
