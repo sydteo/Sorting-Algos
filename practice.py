@@ -1,22 +1,17 @@
-def simplsScan(P, T):
-    i = 0
-    j = 0
-    k = 0
+def simpleScan(P,T):
     m = len(P)
     n = len(T)
-
-    while j < n:
+    k = 0
+    j = 0
+    while j <= n-m:
         if T[j] != P[k]:
-            i += 1
-            j = i
-            if (j > n-m):
-                break
+            j = j - k + 1
             k = 0
         else:
             j += 1
             k += 1
-            if (k == m):
-                return i
+            if k == m:
+                return j - k
     return -1
 
-print("index is found at: ", simplsScan("syd","teosdysyd"))
+print(simpleScan("hi","ehi"))
