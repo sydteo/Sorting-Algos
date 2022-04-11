@@ -36,9 +36,9 @@ def knapsack(wi, pi, C):
     return profit[C]
 
 
-wi = [4, 6, 8]
-pi = [7, 6, 9]
-C = 14
+wi = [5,6,3]
+pi = [4,10,6]
+C = 10
 knapsackContents = []
 print("\nwi:", wi)
 print("pi:", pi)

@@ -18,5 +18,5 @@ def simpleScan(P, T):
                 return i
     return -1
 
-print("index can be found at: ", simpleScan("lo","kjahilo"))
+print("index can be found at: ", simpleScan("astro","asastro"))
     
